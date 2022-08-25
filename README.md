@@ -2,7 +2,7 @@ title:charRotoSettings
 author:Andreas Breitwieser
 date:25.08.22
 
-![](/img/klein.png)
+![](img/klein.png)
 
 #### charRotovator
 
