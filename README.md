@@ -6,11 +6,13 @@ date:22.08.22
 
 ## Links 
 
-[Download Processing](https://processing.org/download)
-[Git auf dem Mac einrichten](https://www.youtube.com/watch?v=_sLgRBrZh6o&t=168s)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_sLgRBrZh6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- [Download Processing](https://processing.org/download) 
+- [Git auf dem Mac einrichten](https://www.youtube.com/watch?v=_sLgRBrZh6o&t=168s)
 
-# 1 Voreinstellungen
+ ---
+  
+  
+## Voreinstellungen
 
 Bevor Du loslegen kannst sollten ein paar Voreinstellungen gemacht werden. In der aktuellen Version besteht das Programm aus drei Dateien, in in der Processing App als drei Tabs dargestellt werden. 
 Der erste Tab heißt genau so, wie die aktuelle Version des Programms. Alle Voreinstellung sind hier zu erledigen. 
