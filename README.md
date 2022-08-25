@@ -2,9 +2,9 @@ title:charRotoSettings
 author:Andreas Breitwieser
 date:25.08.22
 
-![](img/klein.png)
+![](img/kommata_m.png)
 
-#### charRotovator
+#### charRotovator 4EDi
 
 ## Links 
 
@@ -54,6 +54,9 @@ mainFont = createFont("HelveticaNeue-Light",200);
 ```
 
 Hier kann nun ein Wunsch-Font geladen werden. Die Funktion **createFont()** erwartet neben dem Dateiname auf jeden Fall auch eine Größe.
+
+
+![](img/courierH.png)
 
 `
  
