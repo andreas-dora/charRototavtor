@@ -19,7 +19,6 @@ PFont courier;
 
 
 int fSize;
-//float theta1 = 0;
 int helpX;
 
 float longSide;
@@ -42,9 +41,9 @@ void setup(){
    fullScreen();
   pixelDensity(1); // nutz die Höhere Pixeldichte von Displays 
   courier = createFont("Courier",100);
- //  mainFont = createFont("Luckiest Guy",200);
+  mainFont = createFont("Luckiest Guy",200);
 
-  mainFont = createFont("ZapfDingbatsITC",200);
+//  mainFont = createFont("ZapfDingbatsITC",200);
  // mainFont = createFont("HelveticaNeue-Light",200);
   textAlign(CENTER,CENTER);
   colorMode(HSB,359,99,99,99);
@@ -99,15 +98,5 @@ void draw(){
     text(helpText ,helpX +30,140);
     text("mouseX = " + mouseX, helpX+30, (height/3)-30);
     text("mouseY = " + mouseY, helpX+30, (height/3));  
- //   rectMode(CENTER);
- //   fill(webFavs[6]);
- //   rect(helpX+500,height -100,200,80);
-//    textAlign(CENTER,CENTER);
-//      fill(webFavs[2]);
-   // textFont(courier,width/40);
- //   text("add",helpX+500,height -100);
-/*  for(int i = tFr.size()-1; i>=0; i--){  
-   TextFrame textFr = tFr.get(i);
-   textFr.show();   
-  }  */
+
 }
