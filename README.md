@@ -6,6 +6,9 @@ date:25.08.22
 
 #### charRotovator 4EDi
 
+Um den rohen Code ausführen zu können brauchst du die kostenlose [Processing App](https://processing.org/download). 
+
+
 ## Links 
 
 - [Download Processing](https://processing.org/download) 
