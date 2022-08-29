@@ -6,17 +6,15 @@
 */
 import java.util.*;
 
-//String myPath = "/Users/andi/Desktop/screenShots/";
-String myPath = "";
-
 String saveFormat = "png";
+String myPath = "";
+//String myPath = "/Users/andi/Desktop/screenShots/";
 
 String fileDate;
 String helpText = "CONTROL + h = Hilfe zeigen / verbergen\nCONTROL + z = Letzte Eingabe löschen\nCONTROL + n = Alle Eingaben löschen\nCONTROL + p = Bild speichern";
 boolean help;
 PFont mainFont;
 PFont courier;
-
 
 int fSize;
 int helpX;
@@ -67,7 +65,6 @@ maxAlpha = 99;
 
 helpX = 0;  
 }
-
 
 /* ###################################################*/
 /* ###################################################*/

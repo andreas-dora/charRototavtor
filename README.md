@@ -6,10 +6,18 @@ date:25.08.22
 
 # charRotovator 4EDi
 
-## 
 
 Um den rohen Code ausführen zu können brauchst du die kostenlose [Processing App](https://processing.org/download) und natürlich den 
 Code von meiner [Github Seite](https://github.com/andreas-dora/charRotovator). Klick auf **CODE** und dann **Download Zip**. 
+
+Die Dateien können auch mit Git über die Konsole geladen werden: 
+
+```
+git clone https://github.com/andreas-dora/charRotovator.git
+
+```
+ 
+--- 
 
 
 
@@ -19,30 +27,163 @@ Code von meiner [Github Seite](https://github.com/andreas-dora/charRotovator). K
 - [Git auf dem Mac einrichten](https://www.youtube.com/watch?v=_sLgRBrZh6o&t=168s)
 
  ---
+ 
+# Grundlagen
+
+#### Die Processing App
+
+Die Processing App ist eine sehr leichtgewichte aber komplette Programmierumgebung. Sie dient zum Schreiben und Ausführen von Code. Fertige Programme können als Stand-Alone-Apps exportiert werden. 
+
+In Processing wird ein Programm **Sketch**  genannt. Dementsprechend findest Du in der App Menüpunkte wie **Sketch starten** und **Sketch archivieren**. Deine Dateien werden im  Ordner **Sketchbook** gespeichert. 
+
+Ein Sketch kann aus mehreren Dateien bestehen. Jeder Sketch wird in einem gleichnamigen Ordner gespeichert. 
+In der Processing App findest Du im Menüpunkt **Tootls** die Funktion **Sketch archivieren**. Der Sketch wird als Zip-Datei im jeweiligen Sketch-Ordner gespeichert.  Das ist sehr praktisch falls man sich mal etwas kaputt schreibt.
+
+In der App findest Du unter dem Menüpunkt **Datei** recht große Auswahl von **Bespielen** zu verschiedenen Themen.
+
+---
+ 
+## Schreibweise
+ 
+ ```
+float x = 200;
+float y;
+int r = 50;
+float xSpeed = 2.4;
+
+void setup(){ 
+  size(640, 360); 
+  y = height / 2;
+}
+
+void draw(){
+  background(0, 100, 200);
+  fill(255, 200, 50);
+  ellipse(x, y, 100, 100);
+  x = x + xSpeed;
+  if ( x > width  + r){
+    x = - r;
+  }
+}
+```
+ 
+ 
+#### Groß- und Kleinschreibung
+
+Groß- und Kleinschreibung sind genau zu beachten. Der Wert einer Variable klein `y` kann nicht mit groß `Y` abgerufen werden.  
+
+---
+
+#### Semikolon 
+
+Jede Anweisung wird mit einem Semikolon beendet. 
+
+```
+  background(0, 100, 200);
+  fill(255, 200, 50);
+  ellipse(x, y, 100, 100);
+  ```
+  
+ ---
+
+#### Kommata 
+Kommata trennen Werte. Die Funktion `size(640,360);` erzeugt ein Programmfenster mit 640 Pixeln breite und 360 Pixeln höhe. 
+Komma-Zahlen werden dem englischen Begriff und der Schreibweise entsprechend als **Floating Point Numbers** mit einem Punkt als Trennzeichen geschrieben: `float xSpeed = 2.4;`
+
+---
+
+#### Einrückungen
+Einrückungen sogenannte Indentations haben in Java und damit auch Processing keinen Einfluss auf das Programm. Einrückungen, Leerzeichen und Zeilenumbrüche dienen ausschließlich der besseren Lesbarkeit. Der oben stehende Code könnte auch so zusammen gefasst werden:
+
+```
+float x=200;float y;int r=50;float xSpeed=2.4;
+void setup(){size(640,360);y=height/2;}
+void draw(){background(0,100,200);fill(255,200,50);ellipse(x,y,2*r,2*r);
+x =x+xSpeed;if(x>width+r){x=-r;}}
+```
+
+---
+
+
+#### Kommentare 
+
+Kommentare sind Teile des Codes die nicht ausgeführt werden. Mit Kommentaren können Erklärungen und Informationen hinterlassen werden.
+Kommentare ermöglichen 
+Außerdem ermöglichen Kommentare Veränderungen im Code ausprobieren ohne, dass man etwas löschen muss.
+Zwischen `/*`und `*/` werden mehrzeilige Kommentare gesetzt.
+`//`Doppel-Slash Kommentiert bis zum nächsten Zeilenumbruch aus. Es wird lediglich der Teil Hinter dem Doppel-Slash ignoriert: `int r = 50; // r = Radius` 
+
+```
+/* 
+Die neue If-Bedingung 
+lässt den Ball abprallen 
+und wieder umkehren 
+*/
+
+float x = 200;
+float y;
+int r = 50; // r = Radius
+float xSpeed = 2.4;
+  
+void setup(){
+//  size(360,640);
+  size(640,360); 
+  y = height / 2;
+}
+
+void draw(){
+  background(0, 100, 200);
+  noStroke();
+  fill(255, 200, 50);
+  ellipse(x,y,r*2,r*2);
+  x = x +xSpeed;
+ /*
+  if(x > width+r){
+    x = -r;
+  }
+  */
+  if((x >= width - r) || (x < 0 + r)){
+    xSpeed = xSpeed * -1;
+  }
+}
+```
+
+--- 
   
   
-## Voreinstellungen
+  
+# Voreinstellungen
+
+
+### Dateiformat 
 
 Bevor Du loslegen kannst sollten ein paar Voreinstellungen gemacht werden. In der aktuellen Version besteht das Programm aus drei Dateien, in in der Processing App als drei Tabs dargestellt werden. 
 Der erste Tab heißt genau so, wie die aktuelle Version des Programms. Alle Voreinstellung sind hier zu erledigen. 
 Zu Beginn tauchen zwei Zeilen auf: 
 
 ```
-String myPath = "";
 String saveFormat = "png";
+String myPath = "";
 ```
+Die Zeile **saveFormat** gibt das Dateiformat für die einfache Bildspeicherung **saveFrame()** vor. Neben 'png' sind 'tif', 'tga' und 'jpg' möglich. 
 
-Hier geht es um das speichern von Bilddateien. 
-Solange **myPath** leer ist werden Bilder in dem Ordner abgelegt, in dem auch die drei Programm Dateien liegen. Der Ordner ist nicht nur schlecht zu erreichen, bei einer Softwareaktualisierung ist er schnell überschrieben.
-Hier kann der Pfad zu einem Wunsch-Ordner hinterlegt werden. Das sieht dann etwa so aus:
+---
+
+### Speicherpfad 
+
+In der Zeile **myPath** gibst Du an, wo deine Bilder gespeichert werden sollen. Bleibt Die Zeile leer werden Bilder direkt neben den Programmdateien gespeichert. Bei einem Update des Programmordners würden sie dort verloren gehen. Dateipfade werden in Anführungszeichen angegeben.
  
 ```
 String myPath = "/Users/andi/Desktop/screenShots/"; 
 ```
 
-Die Zeile **saveFormat** gibt das Dateiformat für die einfache Bildspeicherung **saveFrame()** vor. Neben 'png' sind 'tif', 'tga' und 'jpg' möglich.
+Auf dem Mac kannst Du mit Hilfe der **Terminal App** ganz einfach einen Dateipfad ermitteln. Die App findest Du unter Programme -> Andere.  
+Du brauchst nur den gewünschten Ordner auf die Terminal App zu ziehen schon bekommst Du den Pfad ausgegeben. 
+
 
 ----
+
+### Bildschirmauflösung 
 
 Weiter gehts es etwa bei Zeile 30, innerhalb der Setup-Funktion.  
 
@@ -54,13 +195,13 @@ Bei der Benutzung eines hochauflösenden Displays wie kann **pixelDensity** auf 
 
 --- 
 
-## Font laden
+### Font laden
 
 ```
 mainFont = createFont("HelveticaNeue-Light",200);
 ```
 
-Hier kann nun ein Wunsch-Font geladen werden. Die Funktion **createFont()** erwartet neben dem Dateiname auf jeden Fall auch eine Größe.
+Hier kann nun ein Wunsch-Font geladen werden. Die Funktion **createFont()** erwartet neben dem Dateiname auf jeden Fall auch eine Größe. Dateinamen werden wie Pfade in Anführungszeichen gesetzt. 
 
 
 ![](img/courierH.png)
