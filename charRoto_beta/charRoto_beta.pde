@@ -6,8 +6,8 @@
 */
 import java.util.*;
 
-String saveFormat = "png";
-String myPath = "";
+String saveFormat = "png"; // <----------------------- Dateiformat
+String myPath = ""; //<------------------------------- Dateipfad
 //String myPath = "/Users/andi/Desktop/screenShots/";
 
 String fileDate;
@@ -35,14 +35,11 @@ color[] webFavs ={#000000, #034f67, #e6e1dc, #77212e, #373434, #9B2335, #f9423a,
 /* ###################################################*/
 
 void setup(){
-// size(600,900);
-   fullScreen();
-  pixelDensity(1); // nutz die Höhere Pixeldichte von Displays 
+  fullScreen();
+  pixelDensity(1); // <--------------------------------- Pixel dichte 
   courier = createFont("Courier",100);
-  mainFont = createFont("Luckiest Guy",200);
+  mainFont = createFont("Luckiest Guy",200); //<-------- Schrift laden
 
-//  mainFont = createFont("ZapfDingbatsITC",200);
- // mainFont = createFont("HelveticaNeue-Light",200);
   textAlign(CENTER,CENTER);
   colorMode(HSB,359,99,99,99);
   if(width > height){
@@ -54,14 +51,13 @@ fileDate = str(year()-2000) + str(month()) +str(day()) + "_";
 
 help = false;
 
+minFSize = 160;  // <-------------------------- Fontsize min
+maxFSize = longSide *1.5; // <----------------- Fontsize max
 
-minFSize = 160;
-maxFSize = longSide *1.5;
-
-mySatur = 76;
-myBright = 80;
-minAlpha = 92;
-maxAlpha = 99;
+mySatur = 76; // <---------------------------- Sättigung
+myBright = 80; //<---------------------------- Helligkeit
+minAlpha = 92; //<---------------------------- Transparenz min
+maxAlpha = 99; //<---------------------------- Transparenz max
 
 helpX = 0;  
 }
@@ -73,7 +69,7 @@ helpX = 0;
 void draw(){
   textAlign(CENTER,CENTER);
   rectMode(CORNER);
-  background(webFavs[2]);
+  background(webFavs[4]);
    for(int i = 0; i < tFr.size(); i++){  
    TextFrame textFr = tFr.get(i);
    textFr.show();   
@@ -95,5 +91,4 @@ void draw(){
     text(helpText ,helpX +30,140);
     text("mouseX = " + mouseX, helpX+30, (height/3)-30);
     text("mouseY = " + mouseY, helpX+30, (height/3));  
-
 }

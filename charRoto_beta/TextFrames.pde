@@ -6,27 +6,20 @@ class TextFrame{
   float yPos;
   int myAlpha;
   float myAngle;
-  float hue; 
-  TextFrame(String content_, int fontSize_, float xPos_, float yPos_, float myAngle_, int myAlpha_){
+  float hue;
+  color myC;
+  TextFrame(String content_, int fontSize_, float xPos_, float yPos_, float myAngle_,color myC_, int myAlpha_){
     content = content_;
     fontSize = fontSize_;
     xPos = xPos_;
     yPos = yPos_;
     myAngle = myAngle_;
-  //  fSize = int(random(width/8,width));
-   hue  = random((int)random(0,700)); 
-   println(hue);
+    myC = myC_;
     myAlpha = myAlpha_;
-  }
+  } 
   void show(){
-    if(hue > 500){
-      fill(#FCF5D9);
-    } else if((hue >= 359)&&(hue<=420)){
-    //  println("Bingo Black");
-      fill(#000000);
-    } else {
-      fill(hue,mySatur,myBright,myAlpha);
-    }
+
+    fill(myC,myAlpha);
     noStroke();
     textFont(mainFont,fontSize);
     pushMatrix();

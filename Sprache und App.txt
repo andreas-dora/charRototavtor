@@ -1,0 +1,15 @@
+title: Sprache und App
+
+#### Processing Sprache und App
+
+Processing wurde 2001 von Casey Reas und Benjamin Frey auf Basis der Programmiersprache Java entwickelt. Processing sollte Gestaltern den Zugang zum Programmieren erleichtern. Dafür haben die Entwickler Java ein wenig abgekürzte und leistungsstarke Funktionen für das Arbeiten mit Bild und Ton implementiert. Vieles von dem was Processing kann ist mittlerweile auch über HTML, CSS und Javascript im Browser möglich. Bei rechenintensiveren Aufgaben ist Processing allerdings nach wie vor klar im Vorteil.
+
+Die Processing App ist eine komplette Entwicklungsumgebung, zum Schreiben und Ausführen des Codes. Eine Exportfunktion erstellt aus fertigem Code eigenständige Programme.  
+ 
+ In Processing wird ein Programm **Sketch**  genannt. Dementsprechend findest Du in der App Menüpunkte wie **Sketch starten** und **Sketch archivieren**. Deine Dateien werden im Ordner **Sketchbook** gespeichert. 
+
+Ein Sketch kann aus mehreren Dateien bestehen. Jeder Sketch wird in einem gleichnamigen Ordner gespeichert. 
+In der Processing App findest Du im Menüpunkt **Tootls** die Funktion **Sketch archivieren**. Der Sketch wird als Zip-Datei im jeweiligen Sketch-Ordner gespeichert.  Das ist sehr praktisch falls man sich mal etwas kaputt schreibt.
+
+In der App findest Du unter dem Menüpunkt **Datei** recht große Auswahl von **Bespielen** zu einer Vielzahl von Themen. 
+Auf der Homepage der Processing Foundation sind alle Funktionen der Sprache ausführlich dokumentiert. Auf dem Youtube-Kanal Coding Train von Daniel Shiffmann gibt es großartige Tutorials zu nahezu allen Aspekten der Sprache. 

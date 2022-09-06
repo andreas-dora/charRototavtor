@@ -7,15 +7,12 @@ date:25.08.22
 # charRotovator 4EDi
 
 
-Um den rohen Code ausführen zu können brauchst du die kostenlose [Processing App](https://processing.org/download) und natürlich den 
-Code von meiner [Github Seite](https://github.com/andreas-dora/charRotovator). Klick auf **CODE** und dann **Download Zip**. 
+Um den rohen Code ausführen zu können brauchst du die kostenlose [Processing App](https://processing.org/download) und natürlich den Code von meiner [Github Seite](https://github.com/andreas-dora/charRotovator). Klick auf **CODE** und dann **Download Zip**.  Die Dateien können auch mit Git über die Konsole geladen werden: 
 
-Die Dateien können auch mit Git über die Konsole geladen werden: 
+`git clone https://github.com/andreas-dora/charRotovator.git`
 
-```
-git clone https://github.com/andreas-dora/charRotovator.git
+Das Programm-Paket enthält die App **charRoto_beta** und einen Ordner mit weiteren Beispielen. Die App besitzt derzeit noch kein User-Interface. Einige Voreinstellung sind also noch per Hand im Code einzutragen. Unter den folgenden Links findest Du eine Beschreibung aller Voreinstellungen sowie eine Übersicht der Tastatur-Befehle. Außerdem    
 
-```
  
 --- 
 
@@ -30,11 +27,13 @@ git clone https://github.com/andreas-dora/charRotovator.git
  
 # Grundlagen
 
-#### Die Processing App
+#### Processing Sprache und App
 
-Die Processing App ist eine sehr leichtgewichte aber komplette Programmierumgebung. Sie dient zum Schreiben und Ausführen von Code. Fertige Programme können als Stand-Alone-Apps exportiert werden. 
+Processing wurde 2001 von Casey Reas und Benjamin Frey auf Basis der Programmiersprache Java entwickelt. Processing sollte Gestaltern einen leichten Zugang zum Programmieren erleichtern. Dafür haben die Entwickler Java ein wenig abgekürzte und leistungsstarke Funktionen für das Arbeiten mit Bild und Ton implementiert. Vieles von dem was Processing kann ist mittlerweile auch über HTML, CSS und Javascript im Browser möglich. Bei rechenintensiveren Aufgaben ist Processing allerdings nach wie vor klar im Vorteil.
 
-In Processing wird ein Programm **Sketch**  genannt. Dementsprechend findest Du in der App Menüpunkte wie **Sketch starten** und **Sketch archivieren**. Deine Dateien werden im  Ordner **Sketchbook** gespeichert. 
+Die Processing App ist eine komplette Entwicklungsumgebung, zum Schreiben und Ausführen des Codes. Eine Exportfunktion erstellt aus fertigem Code eigenständige Programme.  
+
+ In Processing wird ein Programm **Sketch**  genannt. Dementsprechend findest Du in der App Menüpunkte wie **Sketch starten** und **Sketch archivieren**. Deine Dateien werden im  Ordner **Sketchbook** gespeichert. 
 
 Ein Sketch kann aus mehreren Dateien bestehen. Jeder Sketch wird in einem gleichnamigen Ordner gespeichert. 
 In der Processing App findest Du im Menüpunkt **Tootls** die Funktion **Sketch archivieren**. Der Sketch wird als Zip-Datei im jeweiligen Sketch-Ordner gespeichert.  Das ist sehr praktisch falls man sich mal etwas kaputt schreibt.
