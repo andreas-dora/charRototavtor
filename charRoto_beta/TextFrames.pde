@@ -8,18 +8,18 @@ class TextFrame{
   float myAngle;
   float hue;
   color myC;
-  TextFrame(String content_, int fontSize_, float xPos_, float yPos_, float myAngle_,color myC_, int myAlpha_){
+  TextFrame(String content_, int fontSize_, float xPos_, float yPos_, float myAngle_,color myC_){
     content = content_;
     fontSize = fontSize_;
     xPos = xPos_;
     yPos = yPos_;
     myAngle = myAngle_;
     myC = myC_;
-    myAlpha = myAlpha_;
+  //  myAlpha = myAlpha_;
   } 
   void show(){
 
-    fill(myC,myAlpha);
+    fill(myC);
     noStroke();
     textFont(mainFont,fontSize);
     pushMatrix();
