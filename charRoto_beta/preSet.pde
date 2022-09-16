@@ -30,8 +30,8 @@ void savePreJSON(){
   fontSet.setString("sampleStr",input[1].vorne);
  fontSet.setInt("size", fSize); 
  preSet.setString("savePath", input[2].vorne);
-//  fontSet.setInt("minFSize",(int)minFSize); 
-//  fontSet.setInt("maxFSize",(int)maxFSize); 
+  fontSet.setInt("minFSize",(int)minFSize); 
+  fontSet.setInt("maxFSize",(int)maxFSize); 
  
  // fontSet.setString("sampleStr","Fuchs ist müde"); 
   

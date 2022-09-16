@@ -19,7 +19,7 @@ void keyReleased(){
     } else {
      tempC = color(tempHue,tempS,tempBr,myAlpha);
     }
-    tFr.add(new TextFrame(myStr,fontSize, xPos, yPos, myAngle, tempC));
+    tFr.add(new TextFrame(myStr,activeF,fontSize, xPos, yPos, myAngle, tempC));
   }
     if(int(key) == 16){
       String fileDate = str(year()-2000) + str(month()) +str(day())+str(hour()) + "_";
